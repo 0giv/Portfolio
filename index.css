@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    margin: 15% 40%;
+    padding: 10px;
+    background-color: grey;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #444444;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+button svg {
+    width: 3rem;
+}
+
+img {
+    margin: 0 40%;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px black;
+}
+
+body {
+    font-family: 'Tektur', cursive;
+}
+
+hr {
+    max-width: 90%;
+    margin: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.items {
+    margin: 2% 0%;
+    display: flex;
+}
+
+.items li {
+    display: inline-block;
+    margin-right: 10rem;
+    font-size: larger;
+    margin-left: 8rem;
+}
+
+#nick {
+    text-align: center;
+    margin: 2% 0%;
+}
+
+#nick:hover {
+    cursor: default;
+}
+
+li a {
+    transition: 0.4s;
+    color: #9ba6a5;
+}
+
+li a:hover {
+    color: rgb(108, 108, 108);
+    /* text-shadow: 0 0 5px black; */
+}
+
+.maincontent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.svg {
+    z-index: 0;
+    opacity: 0;
+    width: 70%;
+    height: 90%;
+    background-color: #f2f2f2;
+    border-radius: 10%;
+    padding: 1% 8%;
+    margin: 0.5rem 15%;
+}
+
+.svg svg {
+    margin-top: 10%;
+    margin-left: 41%;
+    width: 4em;
+    height: 4em;
+    margin-bottom: 10px;
+}
+
+.svg h1 {
+    margin-bottom: 10%;
+}
+
+.text a {
+    color: #9ba6a5;
+    transition: 0.3s;
+}
+
+.text a:hover {
+    color: black;
+}
+
+#mailto:hover {
+
+    filter: drop-shadow(30px 10px 3px black);
+}
+
+.svgitems {
+    margin: 5% 0%;
+}
+
+.aboutme {
+    z-index: 0;
+    opacity: 0;
+    width: 65%;
+    height: 90%;
+    background-color: #f2f2f2;
+    border-radius: 10%;
+    padding: 1% 13%;
+    margin: 0.5rem 5%;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about {
+    margin-top: 5%;
+}
+
+.text {
+    text-align: center;
+}
+
+.text svg {
+    width: 4em;
+    height: 2em;
+}
+
+.icon-container a {
+    text-align: center;
+    transition: 0.4s;
+    color: #9ba6a5;
+}
+
+.icon-container a:hover {
+    filter: drop-shadow(30px 15px 3px black);
+    color: black;
+    text-shadow: 1 1 1px black;
+}
+
+.projects {
+    scrollbar-width: thin;
+    overflow-y: scroll;
+    max-height: max-content;
+    z-index: 0;
+    opacity: 0;
+    width: 70%;
+    height: 90%;
+    background-color: #f2f2f2;
+    border-radius: 10%;
+    padding: 1% 10%;
+    margin: 0.5rem -2%;
+}
+
+.projects::-webkit-scrollbar {
+    width: 5px;
+    /* Kaydırma çubuğu genişliği */
+}
+
+.projects::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.projects::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.projects::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.github {
+    margin-top: 5%;
+}
+
+
+.projects li {
+    margin: 7% 0%;
+    text-align: center;
+}
+
+.projects li a:hover {
+    color: black;
+    filter: drop-shadow(20px 10px 3px black);
+}
+
+.projects svg {
+    margin: 0% 47%;
+    margin-bottom: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    button {
+        background-color: grey;
+        color: #ffffff;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #444444;
+    }
+
+    .profile {
+        display: block;
+    }
+
+    button svg {
+        width: 3rem;
+    }
+
+    img {
+        height: 10rem;
+        margin: 0% 35%;
+        border-radius: 50%;
+        box-shadow: 0 5px 10px black;
+    }
+
+    body {
+        font-family: 'Tektur', cursive;
+    }
+
+    hr {
+        width: auto;
+        margin: auto;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .header {
+        display: block;
+        justify-content: center;
+    }
+
+    .items {
+        text-align: center;
+        /* margin: 2% 0%; */
+        display: block;
+    }
+
+    .items li {
+        display: none;
+        margin-right: 10rem;
+        font-size: larger;
+        margin-left: 10rem;
+    }
+
+    #nick {
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    #nick:hover {
+        cursor: default;
+    }
+
+    li a {
+        transition: 0.4s;
+        color: #9ba6a5;
+    }
+
+    li a:hover {
+        color: rgb(108, 108, 108);
+        /* text-shadow: 0 0 5px black; */
+    }
+
+    .maincontent {
+        display: block;
+    }
+
+    .svg {
+        z-index: 0;
+        opacity: 10;
+        width: 50%;
+        height: 90%;
+        background-color: #f2f2f2;
+        border-radius: 10%;
+        padding: 1% 8%;
+        margin: 0.5rem 18%;
+    }
+
+    .svg svg {
+        margin-top: 10%;
+        margin-left: 40%;
+        width: 4em;
+        height: 4em;
+        margin-bottom: 10px;
+    }
+
+    .svg h1 {
+        margin-bottom: 10%;
+    }
+
+    .text a {
+        color: #9ba6a5;
+        transition: 0.3s;
+    }
+
+    .text a:hover {
+        color: black;
+    }
+
+    #mailto {
+        margin: 0% -20%;
+    }
+
+    #mailto:hover {
+        filter: drop-shadow(30px 10px 3px black);
+    }
+
+    .svgitems {
+        margin: 5% 0%;
+    }
+
+    .aboutme {
+        font-size: x-large;
+        z-index: 0;
+        width: 50%;
+        height: 90%;
+        opacity: 10;
+        background-color: #f2f2f2;
+        border-radius: 10%;
+        padding: 1% 13%;
+        margin: 0.5rem 13%;
+    }
+
+    .languages {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about {
+        margin-top: 5%;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .text svg {
+        width: 4em;
+        height: 2em;
+    }
+
+    .icon-container a {
+        text-align: center;
+        transition: 0.4s;
+        color: #9ba6a5;
+    }
+
+    .icon-container a:hover {
+        filter: drop-shadow(30px 15px 3px black);
+        color: black;
+        text-shadow: 1 1 1px black;
+    }
+
+    .projects {
+        scrollbar-width: thin;
+        overflow-y: scroll;
+        font-size: x-large;
+        max-height: max-content;
+        z-index: 0;
+        opacity: 10;
+        width: 50%;
+        height: 90%;
+        background-color: #f2f2f2;
+        border-radius: 10%;
+        padding: 1% 10%;
+        margin: 0.5rem 16%;
+    }
+    .projects::-webkit-scrollbar {
+        width: 5px;
+        /* Kaydırma çubuğu genişliği */
+    }
+    
+    .projects::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+    }
+    
+    .projects::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .projects::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    .github {
+        margin-top: 5%;
+    }
+
+
+    .projects li {
+        margin: 7% 0%;
+        text-align: center;
+    }
+
+    .projects li a:hover {
+        color: black;
+        filter: drop-shadow(20px 10px 3px black);
+    }
+
+    .projects svg {
+        margin: 0% 45%;
+        margin-bottom: 0%;
+    }
+
+}
