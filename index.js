@@ -65,6 +65,7 @@ function submit2() {
   }
 }
 function darkmode() {
+  var moon = document.getElementById('moon')
   var nick = document.getElementById('nick');
   var button = document.getElementById('darkmode');
   var body = document.getElementById('body');
@@ -74,6 +75,7 @@ function darkmode() {
   darkmodeclickcount++;
 
   if (darkmodeclickcount % 2 == 1) {
+    moon.style.color = 'black'
     nick.style.color = 'white';
     button.style.backgroundColor = 'white'
     body.style.transition = '0.5s';
@@ -86,6 +88,7 @@ function darkmode() {
     projects.style.backgroundColor = 'grey';
   }
   else {
+    moon.style.color = 'white'
     nick.style.color = 'black';
     button.style.backgroundColor = 'grey'
     body.style.transition = '0.5s';
