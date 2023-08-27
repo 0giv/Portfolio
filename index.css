@@ -119,6 +119,10 @@ li a:hover {
     margin-bottom: 10%;
 }
 
+.svg h2 {
+    margin-left: 5%;
+}
+
 .text a {
     color: #9ba6a5;
     transition: 0.3s;
@@ -420,24 +424,25 @@ li a:hover {
         padding: 1% 10%;
         margin: 0.5rem 16%;
     }
+
     .projects::-webkit-scrollbar {
         width: 0px;
         /* Kaydırma çubuğu genişliği */
     }
-    
+
     .projects::-webkit-scrollbar-thumb {
         background-color: rgba(0, 0, 0, 0.2);
         border-radius: 3px;
     }
-    
+
     .projects::-webkit-scrollbar-thumb:hover {
         background-color: rgba(0, 0, 0, 0.3);
     }
-    
+
     .projects::-webkit-scrollbar-track {
         background-color: rgba(0, 0, 0, 0.05);
     }
-    
+
     .github {
         margin-top: 5%;
     }
@@ -649,24 +654,25 @@ li a:hover {
         padding: 1% 10%;
         margin: 0.5rem 16%;
     }
+
     .projects::-webkit-scrollbar {
         width: 0px;
         /* Kaydırma çubuğu genişliği */
     }
-    
+
     .projects::-webkit-scrollbar-thumb {
         background-color: rgba(0, 0, 0, 0.2);
         border-radius: 3px;
     }
-    
+
     .projects::-webkit-scrollbar-thumb:hover {
         background-color: rgba(0, 0, 0, 0.3);
     }
-    
+
     .projects::-webkit-scrollbar-track {
         background-color: rgba(0, 0, 0, 0.05);
     }
-    
+
     .github {
         margin-top: 5%;
     }
@@ -688,7 +694,8 @@ li a:hover {
     }
 
 }
-@media screen and (max-width: 560px){
+
+@media screen and (max-width: 560px) {
     button {
         background-color: grey;
         color: #ffffff;
@@ -878,24 +885,25 @@ li a:hover {
         padding: 1% 20%;
         margin: 0.5rem 5%;
     }
+
     .projects::-webkit-scrollbar {
         width: 0px;
         /* Kaydırma çubuğu genişliği */
     }
-    
+
     .projects::-webkit-scrollbar-thumb {
         background-color: rgba(0, 0, 0, 0.2);
         border-radius: 3px;
     }
-    
+
     .projects::-webkit-scrollbar-thumb:hover {
         background-color: rgba(0, 0, 0, 0.3);
     }
-    
+
     .projects::-webkit-scrollbar-track {
         background-color: rgba(0, 0, 0, 0.05);
     }
-    
+
     .github {
         margin-top: 5%;
     }
