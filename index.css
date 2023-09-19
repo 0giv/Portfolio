@@ -235,7 +235,7 @@ li a:hover {
     margin-bottom: 0%;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1030px) {
     button {
         background-color: grey;
         color: #ffffff;
@@ -566,7 +566,7 @@ li a:hover {
 
     .svg svg {
         margin-top: 10%;
-        margin-left: 45%;
+        margin-left: 44%;
         width: 4em;
         height: 4em;
         margin-bottom: 10px;
@@ -1026,7 +1026,7 @@ li a:hover {
 
     .svg svg {
         margin-top: 10%;
-        margin-left: 37%;
+        margin-left: 33%;
         width: 4em;
         height: 4em;
         margin-bottom: 10px;
