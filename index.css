@@ -1,1156 +1,158 @@
-* {
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
     margin: 0;
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-button {
-    margin: 15% 40%;
-    padding: 10px;
-    background-color: grey;
-    color: #ffffff;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #444444;
-}
-
-.profile {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-button svg {
-    width: 3rem;
-}
-
-img {
-    margin: 0 40%;
-    border-radius: 50%;
-    box-shadow: 0 5px 10px black;
-}
-
-body {
-    font-family: 'Tektur', cursive;
-}
-
-hr {
-    max-width: 90%;
-    margin: auto;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.header {
+.container {
     display: flex;
+    align-items: center;
     justify-content: center;
+    /* height: 100vh; */
 }
 
-.items {
-    margin: 2% 0%;
-    display: flex;
-}
-
-.items li {
-    display: inline-block;
-    margin-right: 10rem;
-    font-size: larger;
-    margin-left: 8rem;
-}
-
-#nick {
-    text-align: center;
-    margin: 2% 0%;
-}
-
-#nick:hover {
-    cursor: default;
-}
-
-li a {
-    transition: 0.4s;
-    color: #9ba6a5;
-}
-
-li a:hover {
-    color: rgb(108, 108, 108);
-    /* text-shadow: 0 0 5px black; */
-}
-
-.maincontent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.svg {
-    z-index: 0;
-    opacity: 0;
-    width: 70%;
-    height: 90%;
-    background-color: #f2f2f2;
-    border-radius: 10%;
-    padding: 1% 8%;
-    margin: 0.5rem 15%;
-}
-
-.svg svg {
+.terminal {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8),
+        0 0 20px rgba(0, 255, 0, 0.6),
+        0 0 30px rgba(0, 255, 0, 0.4),
+        0 0 40px rgba(0, 255, 0, 0.2),
+        0 0 50px rgba(0, 255, 0, 0.1);
+    background-color: #000;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 8%;
     margin-top: 10%;
-    margin-left: 43%;
-    width: 4em;
-    height: 4em;
+}
+
+label {
+    color: #00ff00;
+    padding: 5px;
+    font-family: 'Courier New', monospace;
+    border-radius: 3px;
+    margin-bottom: 10px;
+
+}
+
+input {
+    background-color: #2e2e2e;
+    color: #00ff00;
+    padding: 5px;
+    font-family: 'Courier New', monospace;
+    border-radius: 3px;
     margin-bottom: 10px;
 }
 
-.svg h1 {
-    margin-bottom: 10%;
-}
-
-.svg h2 {
-    margin-left: 5%;
-}
-
-.text a {
-    color: #9ba6a5;
-    transition: 0.3s;
-}
-
-.text a:hover {
-    color: black;
-}
-
-#mailto:hover {
-
-    filter: drop-shadow(30px 10px 3px black);
-}
-
-.svgitems {
-    margin: 5% 0%;
-}
-
-.aboutme {
-    z-index: 0;
-    opacity: 0;
-    width: 65%;
-    height: 90%;
-    background-color: #f2f2f2;
-    border-radius: 10%;
-    padding: 1% 13%;
-    margin: 0.5rem 5%;
-}
-
-.languages {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.about {
-    margin-top: 5%;
-}
-
-.text {
-    text-align: center;
-}
-
-.text svg {
-    width: 4em;
-    height: 2em;
-}
-
-.icon-container a {
-    text-align: center;
-    transition: 0.4s;
-    color: #9ba6a5;
-}
-
-.icon-container a:hover {
-    filter: drop-shadow(30px 15px 3px black);
-    color: black;
-    text-shadow: 1 1 1px black;
-}
-
-.projects {
-    scrollbar-width: thin;
-    overflow-y: scroll;
-    max-height: max-content;
-    z-index: 0;
-    opacity: 0;
-    width: 70%;
-    height: 90%;
-    background-color: #f2f2f2;
-    border-radius: 10%;
-    padding: 1% 10%;
-    margin: 0.5rem -2%;
-}
-
-.projects::-webkit-scrollbar {
-    width: 0px;
-    /* Kaydırma çubuğu genişliği */
-}
-
-.projects::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-}
-
-.projects::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.projects::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-.github {
-    margin-top: 5%;
-}
-
-
-.projects li {
-    margin: 7% 0%;
-    text-align: center;
-}
-
-.projects li a:hover {
-    color: black;
-    filter: drop-shadow(20px 10px 3px black);
-}
-
-.projects svg {
-    margin: 0% 47%;
-    margin-bottom: 0%;
-}
-
-@media screen and (max-width: 1030px) {
-    button {
-        background-color: grey;
-        color: #ffffff;
-        border: none;
-        border-radius: 50px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-        background-color: #444444;
-    }
-
-    .profile {
-        display: block;
-    }
-
-    button svg {
-        width: 3rem;
-    }
-
-    img {
-        height: 10rem;
-        margin: 0% 35%;
-        border-radius: 50%;
-        box-shadow: 0 5px 10px black;
-    }
-
-    body {
-        font-family: 'Tektur', cursive;
-    }
-
-    hr {
-        width: auto;
-        margin: auto;
-    }
-
-    li {
-        list-style-type: none;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .header {
-        display: block;
-        justify-content: center;
-    }
-
-    .items {
-        text-align: center;
-        /* margin: 2% 0%; */
-        display: block;
-    }
-
-    .items li {
-        display: none;
-        margin-right: 10rem;
-        font-size: larger;
-        margin-left: 10rem;
-    }
-
-    #nick {
-        text-align: center;
-        margin-bottom: 10%;
-    }
-
-    #nick:hover {
-        cursor: default;
-    }
-
-    li a {
-        transition: 0.4s;
-        color: #9ba6a5;
-    }
-
-    li a:hover {
-        color: rgb(108, 108, 108);
-        /* text-shadow: 0 0 5px black; */
-    }
-
-    .maincontent {
-        display: block;
-    }
-
-    .svg {
-        z-index: 0;
-        opacity: 10;
-        width: 50%;
-        height: 90%;
-        background-color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1% 8%;
-        margin: 0.5rem 18%;
-    }
-
-    .svg svg {
-        margin-top: 10%;
-        margin-left: 45%;
-        width: 4em;
-        height: 4em;
-        margin-bottom: 10px;
-    }
-
-    .svg h1 {
-        margin-bottom: 10%;
-    }
-
-    .text a {
-        color: #9ba6a5;
-        transition: 0.3s;
-    }
-
-    .text a:hover {
-        color: black;
-    }
-
-    #mailto {
-        margin: 0% -20%;
-    }
-
-    #mailto:hover {
-        filter: drop-shadow(30px 10px 3px black);
-    }
-
-    .svgitems {
-        margin: 5% 0%;
-    }
-
-    .aboutme {
-        font-size: x-large;
-        z-index: 0;
-        width: 50%;
-        height: 90%;
-        opacity: 10;
-        background-color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1% 9%;
-        margin: 0.5rem 17%;
-    }
-
-    .languages {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .about {
-        margin-top: 5%;
-    }
-
-    .text {
-        text-align: center;
-    }
-
-    .text svg {
-        width: 4em;
-        height: 2em;
-    }
-
-    .icon-container a {
-        text-align: center;
-        transition: 0.4s;
-        color: #9ba6a5;
-    }
-
-    .icon-container a:hover {
-        filter: drop-shadow(30px 15px 3px black);
-        color: black;
-        text-shadow: 1 1 1px black;
-    }
-
-    .projects {
-        scrollbar-width: thin;
-        overflow-y: scroll;
-        font-size: x-large;
-        max-height: max-content;
-        z-index: 0;
-        opacity: 10;
-        width: 50%;
-        height: 90%;
-        background-color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1% 10%;
-        margin: 0.5rem 16%;
-    }
-
-    .projects::-webkit-scrollbar {
-        width: 0px;
-        /* Kaydırma çubuğu genişliği */
-    }
-
-    .projects::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 3px;
-    }
-
-    .projects::-webkit-scrollbar-thumb:hover {
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .projects::-webkit-scrollbar-track {
-        background-color: rgba(0, 0, 0, 0.05);
-    }
-
-    .github {
-        margin-top: 5%;
-    }
-
-
-    .projects li {
-        margin: 7% 0%;
-        text-align: center;
-    }
-
-    .projects li a:hover {
-        color: black;
-        filter: drop-shadow(20px 10px 3px black);
-    }
-
-    .projects svg {
-        margin: 0% 45%;
-        margin-bottom: 0%;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    button {
-        background-color: grey;
-        color: #ffffff;
-        border: none;
-        border-radius: 50px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-        background-color: #444444;
-    }
-
-    .profile {
-        display: block;
-    }
-
-    button svg {
-        width: 3rem;
-    }
-
-    img {
-        height: 10rem;
-        margin: 0% 35%;
-        border-radius: 50%;
-        box-shadow: 0 5px 10px black;
-    }
-
-    body {
-        font-family: 'Tektur', cursive;
-    }
-
-    hr {
-        width: auto;
-        margin: auto;
-    }
-
-    li {
-        list-style-type: none;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .header {
-        display: block;
-        justify-content: center;
-    }
-
-    .items {
-        text-align: center;
-        /* margin: 2% 0%; */
-        display: block;
-    }
-
-    .items li {
-        display: none;
-        margin-right: 10rem;
-        font-size: larger;
-        margin-left: 10rem;
-    }
-
-    #nick {
-        text-align: center;
-        margin-bottom: 10%;
-    }
-
-    #nick:hover {
-        cursor: default;
-    }
-
-    li a {
-        transition: 0.4s;
-        color: #9ba6a5;
-    }
-
-    li a:hover {
-        color: rgb(108, 108, 108);
-        /* text-shadow: 0 0 5px black; */
-    }
-
-    .maincontent {
-        display: block;
-    }
-
-    .svg {
-        z-index: 0;
-        opacity: 10;
-        width: 50%;
-        height: 90%;
-        background-color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1% 8%;
-        margin: 0.5rem 18%;
-    }
-
-    .svg svg {
-        margin-top: 10%;
-        margin-left: 44%;
-        width: 4em;
-        height: 4em;
-        margin-bottom: 10px;
-    }
-
-    .svg h1 {
-        margin-bottom: 10%;
-    }
-
-    .text a {
-        color: #9ba6a5;
-        transition: 0.3s;
-    }
-
-    .text a:hover {
-        color: black;
-    }
-
-    #mailto {
-        margin: 0% -20%;
-    }
-
-    #mailto:hover {
-        filter: drop-shadow(30px 10px 3px black);
-    }
-
-    .svgitems {
-        margin: 5% 0%;
-    }
-
-    .aboutme {
-        font-size: x-large;
-        z-index: 0;
-        width: 50%;
-        height: 90%;
-        opacity: 10;
-        background-color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1% 9%;
-        margin: 0.5rem 17%;
-    }
-
-    .languages {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .about {
-        margin-top: 5%;
-    }
-
-    .text {
-        text-align: center;
-    }
-
-    .text svg {
-        width: 4em;
-        height: 2em;
-    }
-
-    .icon-container a {
-        text-align: center;
-        transition: 0.4s;
-        color: #9ba6a5;
-    }
-
-    .icon-container a:hover {
-        filter: drop-shadow(30px 15px 3px black);
-        color: black;
-        text-shadow: 1 1 1px black;
-    }
-
-    .projects {
-        scrollbar-width: thin;
-        overflow-y: scroll;
-        font-size: x-large;
-        max-height: max-content;
-        z-index: 0;
-        opacity: 10;
-        width: 50%;
-        height: 90%;
-        background-color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1% 10%;
-        margin: 0.5rem 16%;
-    }
-
-    .projects::-webkit-scrollbar {
-        width: 0px;
-        /* Kaydırma çubuğu genişliği */
-    }
-
-    .projects::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 3px;
-    }
-
-    .projects::-webkit-scrollbar-thumb:hover {
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .projects::-webkit-scrollbar-track {
-        background-color: rgba(0, 0, 0, 0.05);
-    }
-
-    .github {
-        margin-top: 5%;
-    }
-
-
-    .projects li {
-        margin: 7% 0%;
-        text-align: center;
-    }
-
-    .projects li a:hover {
-        color: black;
-        filter: drop-shadow(20px 10px 3px black);
-    }
-
-    .projects svg {
-        margin: 0% 45%;
-        margin-bottom: 0%;
-    }
-
-}
-
-@media screen and (max-width: 575px) {
-    button {
-        background-color: grey;
-        color: #ffffff;
-        border: none;
-        border-radius: 50px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-        background-color: #444444;
-    }
-
-    .profile {
-        display: block;
-    }
-
-    button svg {
-        width: 3rem;
-    }
-
-    img {
-        height: 10rem;
-        margin: 0% 25%;
-        border-radius: 50%;
-        box-shadow: 0 5px 10px black;
-    }
-
-    body {
-        font-family: 'Tektur', cursive;
-    }
-
-    hr {
-        width: auto;
-        margin: auto;
-    }
-
-    li {
-        list-style-type: none;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .header {
-        display: block;
-        justify-content: center;
-    }
-
-    .items {
-        text-align: center;
-        /* margin: 2% 0%; */
-        display: block;
-    }
-
-    .items li {
-        display: none;
-        margin-right: 10rem;
-        font-size: larger;
-        margin-left: 10rem;
-    }
-
-    #nick {
-        text-align: center;
-        margin-bottom: 10%;
-    }
-
-    #nick:hover {
-        cursor: default;
-    }
-
-    li a {
-        transition: 0.4s;
-        color: #9ba6a5;
-    }
-
-    li a:hover {
-        color: rgb(108, 108, 108);
-        /* text-shadow: 0 0 5px black; */
-    }
-
-    .maincontent {
-        display: block;
-    }
-
-    .svg {
-        z-index: 0;
-        opacity: 10;
-        width: 50%;
-        height: 90%;
-        background-color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1% 19%;
-        margin: 0.5rem 7%;
-    }
-
-    .svg svg {
-        margin-top: 10%;
-        margin-left: 42%;
-        width: 4em;
-        height: 4em;
-        margin-bottom: 10px;
-    }
-
-    .svg h1 {
-        margin-bottom: 10%;
-    }
-
-    .text a {
-        color: #9ba6a5;
-        transition: 0.3s;
-    }
-
-    .text a:hover {
-        color: black;
-    }
-
-    #mailto {
-        margin: 0% -20%;
-    }
-
-    #mailto:hover {
-        filter: drop-shadow(30px 10px 3px black);
-    }
-
-    .svgitems {
-        margin: 5% 0%;
-    }
-
-    .aboutme {
-        text-align: center;
-        font-size: x-large;
-        z-index: 0;
-        width: 50%;
-        height: 90%;
-        opacity: 10;
-        background-color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1% 20%;
-        margin: 0.5rem 6%;
-    }
-
-    .languages {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .about {
-        margin-top: 5%;
-    }
-
-    .text {
-        text-align: center;
-    }
-
-    .text svg {
-        width: 4em;
-        height: 2em;
-    }
-
-    .icon-container a {
-        text-align: center;
-        transition: 0.4s;
-        color: #9ba6a5;
-    }
-
-    .icon-container a:hover {
-        filter: drop-shadow(30px 15px 3px black);
-        color: black;
-        text-shadow: 1 1 1px black;
-    }
-
-    .projects {
-        scrollbar-width: thin;
-        overflow-y: scroll;
-        font-size: x-large;
-        max-height: max-content;
-        z-index: 0;
-        opacity: 10;
-        width: 50%;
-        height: 90%;
-        background-color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1% 20%;
-        margin: 0.5rem 6%;
-    }
-
-    .projects::-webkit-scrollbar {
-        width: 0px;
-        /* Kaydırma çubuğu genişliği */
-    }
-
-    .projects::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 3px;
-    }
-
-    .projects::-webkit-scrollbar-thumb:hover {
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .projects::-webkit-scrollbar-track {
-        background-color: rgba(0, 0, 0, 0.05);
-    }
-
-    .github {
-        margin-top: 5%;
-    }
-
-
-    .projects li {
-        margin: 7% 0%;
-        text-align: center;
+@keyframes blink {
+    0% {
+        opacity: 1;
     }
 
-    .projects li a:hover {
-        color: black;
-        filter: drop-shadow(20px 10px 3px black);
+    50% {
+        opacity: 0;
     }
 
-    .projects svg {
-        margin: 0% 35%;
-        margin-bottom: 0%;
+    100% {
+        opacity: 1;
     }
 }
 
-@media screen and (max-width: 470px) {
-    button {
-        background-color: grey;
-        color: #ffffff;
-        border: none;
-        border-radius: 50px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
+input {
+    animation: blink 1.5s infinite;
+}
 
-    button:hover {
-        background-color: #444444;
-    }
+input:focus {
+    animation: none;
+}
 
-    .profile {
-        display: block;
-    }
-
-    button svg {
-        width: 3rem;
-    }
-
-    img {
-        height: 10rem;
-        margin: 0% 25%;
-        border-radius: 50%;
-        box-shadow: 0 5px 10px black;
-    }
-
-    body {
-        font-family: 'Tektur', cursive;
-    }
-
-    hr {
-        width: auto;
-        margin: auto;
-    }
-
-    li {
-        list-style-type: none;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .header {
-        display: block;
-        justify-content: center;
-    }
-
-    .items {
-        text-align: center;
-        /* margin: 2% 0%; */
-        display: block;
-    }
-
-    .items li {
-        display: none;
-        margin-right: 10rem;
-        font-size: larger;
-        margin-left: 10rem;
-    }
-
-    #nick {
-        text-align: center;
-        margin-bottom: 10%;
-    }
-
-    #nick:hover {
-        cursor: default;
-    }
-
-    li a {
-        transition: 0.4s;
-        color: #9ba6a5;
-    }
-
-    li a:hover {
-        color: rgb(108, 108, 108);
-        /* text-shadow: 0 0 5px black; */
-    }
-
-    .maincontent {
-        display: block;
-    }
-
-    .svg {
-        z-index: 0;
-        opacity: 10;
-        width: 50%;
-        height: 90%;
-        background-color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1% 19%;
-        margin: 0.5rem 7%;
-    }
-
-    .svg svg {
-        margin-top: 10%;
-        margin-left: 33%;
-        width: 4em;
-        height: 4em;
-        margin-bottom: 10px;
-    }
-
-    .svg h1 {
-        margin-bottom: 10%;
-    }
-
-    .text a {
-        color: #9ba6a5;
-        transition: 0.3s;
-    }
-
-    .text a:hover {
-        color: black;
-    }
-
-    #mailto {
-        margin: 0% -20%;
-    }
-
-    #mailto:hover {
-        filter: drop-shadow(30px 10px 3px black);
-    }
-
-    .svgitems {
-        margin: 5% 0%;
-    }
-
-    .aboutme {
-        text-align: center;
-        font-size: x-large;
-        z-index: 0;
-        width: 50%;
-        height: 90%;
-        opacity: 10;
-        background-color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1% 20%;
-        margin: 0.5rem 6%;
-    }
-
-    .languages {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .about {
-        margin-top: 5%;
-    }
-
-    .text {
-        text-align: center;
-    }
-
-    .text svg {
-        width: 4em;
-        height: 2em;
-    }
-
-    .icon-container a {
-        text-align: center;
-        transition: 0.4s;
-        color: #9ba6a5;
-    }
-
-    .icon-container a:hover {
-        filter: drop-shadow(30px 15px 3px black);
-        color: black;
-        text-shadow: 1 1 1px black;
-    }
-
-    .projects {
-        scrollbar-width: thin;
-        overflow-y: scroll;
-        font-size: x-large;
-        max-height: max-content;
-        z-index: 0;
-        opacity: 10;
-        width: 50%;
-        height: 90%;
-        background-color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1% 20%;
-        margin: 0.5rem 6%;
-    }
-
-    .projects::-webkit-scrollbar {
-        width: 0px;
-        /* Kaydırma çubuğu genişliği */
-    }
-
-    .projects::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 3px;
-    }
-
-    .projects::-webkit-scrollbar-thumb:hover {
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .projects::-webkit-scrollbar-track {
-        background-color: rgba(0, 0, 0, 0.05);
-    }
-
-    .github {
-        margin-top: 5%;
-    }
+#helpmenu {
+    font-size: 90%;
+}
 
 
-    .projects li {
-        margin: 7% 0%;
-        text-align: center;
-    }
 
-    .projects li a:hover {
-        color: black;
-        filter: drop-shadow(20px 10px 3px black);
-    }
+.label,
+input {
+    background-color: #000;
+    color: #00ff00;
+    padding: 8px;
+    font-family: 'Courier New', monospace;
+    border: none;
+    border-bottom: 1px solid #00ff00;
+}
 
-    .projects svg {
-        margin: 0% 35%;
-        margin-bottom: 0%;
-    }
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #00ff00;
+}
+
+.output {
+    width: 50%;
+    padding-bottom: 10%;
+    margin-left: 25%;
+}
+
+
+.linkedin-link,
+.discord-link,
+.instagram-link,
+.tryhackme-link,
+.github-link {
+    display: block;
+    transition: 0.3s ease-out;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+
+.project-link {
+    text-decoration: none;
+    color: green;
+}
+
+#projects li {
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+
+.linkedin-link:hover {
+    text-shadow: 0 0 10px #66A0FF, 0 0 20px #66A0FF;
+}
+
+.tryhackme-link:hover {
+    text-shadow: 0 0 10px #aa3147, 0 0 20px #aa3147;
+}
+
+.discord-link:hover {
+    text-shadow: 0 0 10px #99AAB5, 0 0 20px #99AAB5;
+}
+
+.instagram-link:hover {
+    text-shadow: 0 0 10px #FF6B6B, 0 0 20px #FF6B6B;
+}
+
+.github-link:hover {
+    text-shadow: 0 0 10px #5EB95E, 0 0 20px #5EB95E;
+}
+
+.tryhackme-link {
+    color: #aa3147;
+}
+
+.linkedin-link {
+    color: #0077B5;
+}
+
+.discord-link {
+    color: #7289DA;
+}
+
+.instagram-link {
+    color: #E4405F;
+}
+
+.github-link {
+    color: #2EA44F;
 }
