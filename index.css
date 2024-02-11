@@ -156,3 +156,21 @@ input:focus {
 .github-link {
     color: #2EA44F;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .terminal {
+        margin-right: 0;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .terminal {
+        margin-right: 5%;
+    }
+}
